@@ -1,0 +1,521 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.page {
+    margin: 0;
+    color: #242135;
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.55;
+}
+
+.site-header {
+    display: flex;
+    width: min(100% - 3rem, 76rem);
+    min-height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin: 0 auto;
+}
+
+.brand {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 0.65rem;
+    color: #242135;
+    text-decoration: none;
+}
+
+.brand__symbol {
+    display: flex;
+    width: 2.45rem;
+    aspect-ratio: 1;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.8rem;
+    background: #7b4dff;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 800;
+    transform: rotate(-7deg);
+}
+
+.brand__name {
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: -0.06em;
+}
+
+.brand__dot {
+    color: #ff784f;
+}
+
+.site-nav__list,
+.footer-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-nav__link {
+    color: #716d81;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 180ms ease;
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus-visible {
+    color: #7b4dff;
+}
+.section-heading {
+    max-width: 42rem;
+    margin: 0 auto 2.5rem;
+    text-align: center;
+}
+
+.section-heading__eyebrow {
+    margin: 0 0 0.55rem;
+    color: #7b4dff;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.section-heading__title {
+    margin: 0;
+    color: #242135;
+    font-size: clamp(2rem, 4vw, 3rem);
+    letter-spacing: -0.055em;
+    line-height: 1.12;
+}
+
+.section-heading__description {
+    max-width: 34rem;
+    margin: 0.85rem auto 0;
+    color: #777386;
+}
+
+.features-list,
+.programs-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: min(100%, 70rem);
+    margin: 0 auto;
+    gap: 1.2rem;
+}
+.features-section {
+    padding: 4.5rem max(1.5rem, calc((100% - 76rem) / 2)) 4rem;
+    background: #f5f3fa;
+}
+
+.feature-card {
+    position: relative;
+    flex: 1 1 calc((100% - 2.4rem) / 3);
+    min-width: 0;
+    min-height: 14rem;
+    padding: 1.35rem 1.2rem;
+    overflow: hidden;
+    border: 1px solid rgba(123, 77, 255, 0.07);
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.76);
+    text-align: center;
+    transition: transform 220ms ease, box-shadow 220ms ease, background 220ms ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-0.3rem);
+    background: #ffffff;
+    box-shadow: 0 1rem 2rem rgba(45, 34, 86, 0.1);
+}
+
+.feature-card__icon {
+    display: flex;
+    width: 4.6rem;
+    aspect-ratio: 1;
+    margin: 0 auto 0.75rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #eee8ff;
+    transition: transform 220ms ease;
+}
+
+.feature-card:hover .feature-card__icon {
+    transform: rotate(-7deg) scale(1.06);
+}
+
+.feature-card__icon--orange { background: #fff0e9; }
+.feature-card__icon--yellow { background: #fff7df; }
+.feature-card__icon--mint { background: #e4f6ef; }
+.feature-card__icon--pink { background: #ffedf3; }
+.feature-card__icon--blue { background: #e9f1ff; }
+
+.feature-card__image {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.feature-card__title {
+    margin: 0 0 0.4rem;
+    color: #28243a;
+    font-size: 1.08rem;
+    letter-spacing: -0.02em;
+}
+
+.feature-card__text {
+    max-width: 19rem;
+    margin: 0 auto;
+    color: #777386;
+    font-size: 0.84rem;
+}
+
+/* === СЕКЦІЯ 3: КОНТАКТИ ТА ФОРМА === */
+.contact-section {
+    padding: 4rem max(1.5rem, calc((100% - 76rem) / 2)) 5rem;
+    background: #fffaf7;
+}
+
+.contact-section .section-heading {
+    margin-bottom: 2rem;
+}
+
+.contact-layout {
+    display: flex;
+    width: min(100%, 70rem);
+    margin: 0 auto;
+    align-items: start;
+    gap: 2rem;
+}
+
+.contact-form {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.contact-info {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.contact-form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.contact-form__label {
+    color: #4a4659;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.contact-form__input {
+    width: 100%;
+    min-height: 2.9rem;
+    padding: 0.7rem 0.1rem;
+    border: 0;
+    border-bottom: 1px solid #c9c4d2;
+    border-radius: 0;
+    background: transparent;
+    color: #242135;
+    font: inherit;
+    font-size: 0.9rem;
+    transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.contact-form__input::placeholder {
+    color: #aaa5b3;
+}
+
+.contact-form__input:focus {
+    border-color: #7b4dff;
+    outline: 0;
+    box-shadow: 0 1px 0 #7b4dff;
+}
+
+.contact-form__input--message {
+    min-height: 8rem;
+    padding: 0.8rem;
+    border: 1px solid #d5d0dc;
+    border-radius: 0.55rem;
+    background: #ffffff;
+    resize: vertical;
+}
+
+.contact-form__button {
+    display: inline-flex;
+    width: fit-content;
+    min-width: 9rem;
+    min-height: 2.9rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.7rem 1.35rem;
+    border: 0;
+    border-radius: 2rem;
+    background: #7b4dff;
+    box-shadow: 0 0.5rem 1.1rem rgba(123, 77, 255, 0.24);
+    color: #ffffff;
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 180ms ease, background 180ms ease, box-shadow 180ms ease;
+}
+
+.contact-form__button:hover {
+    background: #6237df;
+    box-shadow: 0 0.7rem 1.4rem rgba(123, 77, 255, 0.32);
+    transform: translateY(-0.12rem);
+}
+
+.contact-info__map {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.85;
+    border-radius: 0.85rem;
+    object-fit: cover;
+}
+
+.contact-info__details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.2rem;
+}
+
+.contact-info__item {
+    display: flex;
+    flex: 1 1 calc((100% - 2rem) / 3);
+    min-width: 0;
+    align-items: flex-start;
+    gap: 0.55rem;
+}
+
+.contact-info__icon {
+    color: #7b4dff;
+    font-size: 1.15rem;
+    line-height: 1.3;
+}
+
+.contact-info__text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin: 0;
+    color: #5e596e;
+    font-size: 0.73rem;
+    overflow-wrap: anywhere;
+}
+
+.contact-info__label {
+    color: #9993a2;
+    font-size: 0.68rem;
+}
+
+.contact-info__link {
+    color: #5e596e;
+    text-decoration: none;
+}
+
+.contact-info__link:hover {
+    color: #7b4dff;
+    text-decoration: underline;
+}
+
+/* === ПІДВАЛ (FOOTER) ТА ДОСТУПНІСТЬ === */
+.site-footer {
+    display: flex;
+    min-height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1.2rem max(1.5rem, calc((100% - 76rem) / 2));
+    background: #242135;
+    color: #ffffff;
+}
+
+.brand--footer {
+    color: #ffffff;
+}
+
+.brand--footer .brand__symbol {
+    width: 2rem;
+    border: 1px solid #b49bff;
+    border-radius: 0.35rem;
+    background: transparent;
+    color: #c8b7ff;
+    font-size: 0.95rem;
+}
+
+.brand--footer .brand__dot {
+    color: #ff9369;
+}
+
+.site-footer__copyright {
+    margin: 0;
+    color: #b7b2c4;
+    font-size: 0.75rem;
+}
+
+.footer-nav__list {
+    gap: 0.5rem 1rem;
+}
+
+.footer-nav__link {
+    color: #e6e3ec;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 180ms ease;
+}
+
+.footer-nav__link:hover,
+.footer-nav__link:focus-visible {
+    color: #c8b7ff;
+}
+
+.site-nav__link:focus-visible,
+.footer-nav__link:focus-visible,
+.contact-info__link:focus-visible,
+.contact-form__button:focus-visible,
+.brand:focus-visible {
+    outline: 0.15rem solid #ff9369;
+    outline-offset: 0.2rem;
+}
+
+@media (max-width: 52rem) {
+    .feature-card {
+        flex-basis: calc((100% - 1.2rem) / 2);
+    }
+}
+
+@media (max-width: 36rem) {
+    .site-header {
+        width: min(100% - 2rem, 76rem);
+        min-height: auto;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 0.9rem 0 1rem;
+    }
+
+    .site-nav__list {
+        gap: 0.5rem 1.1rem;
+    }
+
+    .features-section {
+        padding: 3rem 1rem;
+    }
+
+    .section-heading {
+        margin-bottom: 1.7rem;
+    }
+
+    .section-heading__title {
+        font-size: clamp(1.8rem, 8vw, 2.35rem);
+    }
+
+    .features-list {
+        width: min(100%, 24rem);
+        gap: 0.8rem;
+    }
+
+    .feature-card {
+        flex-basis: 100%;
+        min-height: auto;
+        padding: 1.15rem;
+    }
+
+    .feature-card__icon {
+        width: 3.8rem;
+        margin-bottom: 0.55rem;
+    }
+
+    .feature-card__image {
+        width: 2.1rem;
+        height: 2.1rem;
+    }
+}
+
+@media (max-width: 52rem) {
+    .contact-layout {
+        gap: 1.5rem;
+    }
+
+    .contact-info__details {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+
+    .contact-info__item {
+        flex-basis: auto;
+    }
+
+    .site-footer {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 36rem) {
+    .contact-section {
+        padding: 3rem 1rem;
+    }
+
+    .contact-layout {
+        width: min(100%, 28rem);
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-info {
+        order: -1;
+    }
+
+    .contact-info__details {
+        flex-direction: column;
+    }
+
+    .site-footer {
+        align-items: center;
+        flex-direction: column;
+        gap: 0.9rem;
+        padding: 1.5rem 1rem;
+        text-align: center;
+    }
+
+    .footer-nav__list {
+        justify-content: center;
+        gap: 0.5rem 1.2rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto;
+        animation-duration: 0.01ms;
+        animation-iteration-count: 1;
+        transition-duration: 0.01ms;
+    }
+}

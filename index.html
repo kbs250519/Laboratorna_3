@@ -1,210 +1,65 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Освітня платформа - Головна сторінка</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Майстерня вебдизайну: навчання HTML, CSS та створення власних сайтів.">
+  <title>Піксель — майстерня вебдизайну</title>
+  <link rel="stylesheet" href="laba-3.css">
 </head>
-<body>
+<body class="page">
 
-    <!-- Шапка сайту -->
-    <header class="main-header">
-        <div class="container header-flex">
-            <div class="logo">
-                <span class="logo-icon" aria-hidden="true">📖</span>
-                <span class="logo-text">EDUCATION</span>
-            </div>
-            <nav class="main-nav">
-                <ul class="nav-list">
-                    <li><a href="#" class="nav-link active" title="Головна сторінка">Home</a></li>
-                    <li><a href="#" class="nav-link" title="Про нас">About Us</a></li>
-                    <li><a href="#" class="nav-link" title="Наші курси">Courses</a></li>
-                    <li><a href="#" class="nav-link" title="Викладачі">Teachers</a></li>
-                    <li><a href="#" class="nav-link" title="Програми навчання">Programs</a></li>
-                    <li><a href="#" class="nav-link" title="Контакти">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header class="site-header">
+    <a class="brand" href="#home" title="На початок сторінки">
+      <span class="brand__symbol" aria-hidden="true">п.</span>
+      <span class="brand__name">піксель<span class="brand__dot">.</span></span>
+    </a>
+    <nav class="site-nav" aria-label="Головна навігація">
+      <ul class="site-nav__list">
+        <li class="site-nav__item"><a class="site-nav__link" href="#features" title="Наші переваги">Переваги</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="#programs" title="Програми навчання">Програми</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="#contact" title="Контактна форма">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Секція переваг (Features) -->
-    <main>
-        <section class="features-section">
-            <div class="container">
-                <h1 class="section-title">Features</h1>
-                
-                <div class="features-grid">
-                    <article class="feature-card">
-                        <div class="feature-icon-wrapper">
-                            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2327ae60' stroke-width='2'><rect x='3' y='3' width='18' height='18' rx='2'/><path d='M9 9h6M9 13h6M9 17h4'/></svg>" alt="Іконка тестування списку" class="feature-icon" title="Перевага: Онлайн-тестування">
-                        </div>
-                        <h2 class="feature-name">Online Testing</h2>
-                        <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                    </article>
-
-                    <article class="feature-card">
-                        <div class="feature-icon-wrapper">
-                            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2327ae60' stroke-width='2'><circle cx='12' cy='8' r='5'/><path d='M3 21v-2a7 7 0 0 1 14 0v2'/></svg>" alt="Іконка професора" class="feature-icon" title="Перевага: Досвідчені викладачі">
-                        </div>
-                        <h2 class="feature-name">Online Testing</h2>
-                        <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                    </article>
-
-                    <article class="feature-card">
-                        <div class="feature-icon-wrapper">
-                            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2327ae60' stroke-width='2'><circle cx='12' cy='8' r='7'/><polyline points='8.21 13.89 7 23 12 20 17 23 15.79 13.88'/></svg>" alt="Іконка медалі та сертифікату" class="feature-icon" title="Перевага: Сертифікація">
-                        </div>
-                        <h2 class="feature-name">Online Testing</h2>
-                        <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                    </article>
-
-                    <article class="feature-card">
-                        <div class="feature-icon-wrapper">
-                            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2327ae60' stroke-width='2'><circle cx='12' cy='12' r='3'/><ellipse cx='12' cy='12' rx='9' ry='3' transform='rotate(45 12 12)'/><ellipse cx='12' cy='12' rx='9' ry='3' transform='rotate(-45 12 12)'/></svg>" alt="Іконка атома та науки" class="feature-icon" title="Перевага: Науковий підхід">
-                        </div>
-                        <h2 class="feature-name">Online Testing</h2>
-                        <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                    </article>
-
-                    <article class="feature-card">
-                        <div class="feature-icon-wrapper">
-                            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2327ae60' stroke-width='2'><monitor x='2' y='3' width='20' height='14' rx='2'/><path d='M8 21h8M12 17v4'/></svg>" alt="Іконка графіка на моніторі" class="feature-icon" title="Перевага: Прогресивна аналітика">
-                        </div>
-                        <h2 class="feature-name">Online Testing</h2>
-                        <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                    </article>
-
-                    <article class="feature-card">
-                        <div class="feature-icon-wrapper">
-                            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2327ae60' stroke-width='2'><path d='M4 19.5A2.5 2.5 0 0 1 6.5 17H20'/><path d='M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z'/></svg>" alt="Іконка підручника" class="feature-icon" title="Перевага: Цифрова бібліотека">
-                        </div>
-                        <h2 class="feature-name">Online Testing</h2>
-                        <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Секція програм (Programs) -->
-        <section class="programs-section">
-            <div class="container">
-                <h2 class="section-title">Programs</h2>
-                
-                <div class="programs-grid">
-                    <div class="program-card bg-precollege">
-                        <div class="program-overlay">
-                            <h3 class="program-name">Pre-college education</h3>
-                            <p class="program-desc">Broaden the creative horizons of your kids</p>
-                        </div>
-                    </div>
-
-                    <div class="program-card bg-middle">
-                        <div class="program-overlay">
-                            <h3 class="program-name">Middle school</h3>
-                            <p class="program-desc">Broaden the creative horizons of your kids</p>
-                        </div>
-                    </div>
-
-                    <div class="program-card bg-high">
-                        <div class="program-overlay">
-                            <h3 class="program-name">High school</h3>
-                            <p class="program-desc">Preparing youngsters for the adult life</p>
-                        </div>
-                    </div>
-
-                    <div class="program-card bg-exchange">
-                        <div class="program-overlay">
-                            <h3 class="program-name">International exchange</h3>
-                            <p class="program-desc">Accepting students from abroad</p>
-                        </div>
-                    </div>
-
-                    <div class="program-card bg-graduate">
-                        <div class="program-overlay">
-                            <h3 class="program-name">Graduate programs</h3>
-                            <p class="program-desc">Solidifying knowledge that was obtained through the long years of learning</p>
-                        </div>
-                    </div>
-
-                    <div class="program-card bg-home">
-                        <div class="program-overlay">
-                            <h3 class="program-name">Home education</h3>
-                            <p class="program-desc">Providing robust distant education</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Секція контактів (Contact) -->
-        <section class="contact-section">
-            <div class="container">
-                <h2 class="section-title">Contact</h2>
-                
-                <div class="contact-wrapper">
-                    <!-- Форма зв'язку -->
-                    <form action="#" method="POST" class="contact-form">
-                        <div class="form-group">
-                            <label for="user-name" class="visually-hidden">Повне ім'я</label>
-                            <input type="text" id="user-name" name="name" placeholder="Full Name" required class="form-control" title="Введіть ваше повне ім'я">
-                        </div>
-                        <div class="form-group">
-                            <label for="user-email" class="visually-hidden">Електронна пошта</label>
-                            <input type="email" id="user-email" name="email" placeholder="E mail" required class="form-control" title="Введіть ваш контактний email">
-                        </div>
-                        <div class="form-group">
-                            <label for="user-message" class="visually-hidden">Повідомлення</label>
-                            <textarea id="user-message" name="message" placeholder="Message" rows="5" required class="form-control text-area" title="Текст вашого повідомлення"></textarea>
-                        </div>
-                        <button type="submit" class="btn-submit" title="Надіслати форму">Send</button>
-                    </form>
-
-                    <!-- Мапа та інфо блоки -->
-                    <div class="contact-info-block">
-                        <div class="map-container">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.2435745147814!2d-0.1186716233792011!3d51.514214271814674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b4dfda6e49%3A0x6b8761fa036ae56!2sLSE%20Houghton%20St%2C%20London%20WC2A%202AE!5e0!3m2!1suk!2sua!4v1700000000000!5m2!1suk!2sua" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Інтерактивна карта розташування кампусу"></iframe>
-                        </div>
-                        
-                        <div class="info-row-grid">
-                            <div class="info-item">
-                                <span class="info-icon" aria-hidden="true">📍</span>
-                                <address class="info-text">LSE Houghton Street<br>London WC2A 2AE<br>UK</address>
-                            </div>
-                            <div class="info-item">
-                                <span class="info-icon" aria-hidden="true">✉️</span>
-                                <span class="info-text"><a href="mailto:hello@gmail.com" class="info-link" title="Напишіть нам">hello@gmail.com</a></span>
-                            </div>
-                            <div class="info-item">
-                                <span class="info-icon" aria-hidden="true">📞</span>
-                                <span class="info-text"><a href="tel:+442074057686" class="info-link" title="Зателефонуйте нам">+44(20) 74057686</a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Підвал сайту -->
-    <footer class="main-footer">
-        <div class="container footer-flex">
-            <div class="logo">
-                <span class="logo-icon" aria-hidden="true">📖</span>
-                <span class="logo-text">EDUCATION</span>
-            </div>
-            <nav class="footer-nav">
-                <ul class="footer-nav-list">
-                    <li><a href="#" class="footer-link" title="Головна">Home</a></li>
-                    <li><a href="#" class="footer-link" title="Про нас">About Us</a></li>
-                    <li><a href="#" class="footer-link" title="Курси">Courses</a></li>
-                    <li><a href="#" class="footer-link" title="Викладачі">Teachers</a></li>
-                    <li><a href="#" class="footer-link" title="Програми">Programs</a></li>
-                    <li><a href="#" class="footer-link" title="Контакти">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
-
-</body>
-</html>
+  <main class="main-content" id="home">
+    <section class="features-section" id="features" aria-labelledby="features-title">
+      <div class="section-heading">
+        <p class="section-heading__eyebrow">Навчайся по-своєму</p>
+        <h1 class="section-heading__title" id="features-title">Твій простір для створення сайтів</h1>
+        <p class="section-heading__description">Від першої ідеї до готової сторінки — вчимося на практиці й підтримуємо одне одного.</p>
+      </div>
+      <div class="features-list">
+        <article class="feature-card">
+          <div class="feature-card__icon"><img class="feature-card__image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='%237b4dff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='14' y='9' width='36' height='46' rx='4'/%3E%3Cpath d='M22 20h20M22 29h20M22 38h12M22 47h18'/%3E%3C/svg%3E" alt="Аркуш із рядками коду" title="Практичне навчання"></div>
+          <h2 class="feature-card__title">Більше практики</h2>
+          <p class="feature-card__text">Кожну нову тему одразу застосовуємо у власному мініпроєкті.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card__icon feature-card__icon--orange"><img class="feature-card__image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='%23ff784f' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='32' cy='21' r='11'/%3E%3Cpath d='M12 55c1-13 8-20 20-20s19 7 20 20M25 22l5 5 10-12'/%3E%3C/svg%3E" alt="Людина, що допомагає з навчанням" title="Підтримка наставника"></div>
+          <h2 class="feature-card__title">Поруч є наставник</h2>
+          <p class="feature-card__text">Розбираємо складні моменти разом і ділимося корисними порадами.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card__icon feature-card__icon--yellow"><img class="feature-card__image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='%23d79b13' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m32 7 7 5 9 1 1 9 6 7-5 8-1 9-9 1-8 6-7-6-9-1-1-9-6-8 6-7 1-9 9-1z'/%3E%3Cpath d='m23 32 6 6 13-14'/%3E%3C/svg%3E" alt="Знак успішно виконаного завдання" title="Видимий прогрес"></div>
+          <h2 class="feature-card__title">Помітний прогрес</h2>
+          <p class="feature-card__text">Крок за кроком збирай портфоліо з робіт, якими пишатимешся.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card__icon feature-card__icon--mint"><img class="feature-card__image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='%232ca886' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='32' cy='32' r='22'/%3E%3Cellipse cx='32' cy='32' rx='10' ry='22'/%3E%3Cpath d='M11 32h42M17 18c9 7 21 7 30 0M17 46c9-7 21-7 30 0'/%3E%3C/svg%3E" alt="Глобус із паралелями та меридіанами" title="Навчання з будь-якого місця"></div>
+          <h2 class="feature-card__title">Навчайся звідусіль</h2>
+          <p class="feature-card__text">Матеріали доступні онлайн — обирай час і темп, зручні саме для тебе.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card__icon feature-card__icon--pink"><img class="feature-card__image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='%23e76591' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='8' y='13' width='48' height='35' rx='3'/%3E%3Cpath d='M22 55h20M32 48v7M17 24l7 7-7 7M30 38h15'/%3E%3C/svg%3E" alt="Вікно браузера з символами коду" title="Сучасні вебтехнології"></div>
+          <h2 class="feature-card__title">Актуальні інструменти</h2>
+          <p class="feature-card__text">Знайомся з HTML5, CSS3 та підходами, які використовують вебдизайнери.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card__icon feature-card__icon--blue"><img class="feature-card__image" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' fill='none' stroke='%234d83df' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 15h44v34H10zM18 23h18M18 31h28M18 39h20'/%3E%3Cpath d='m40 15 7-7 9 9-7 7'/%3E%3C/svg%3E" alt="Вебсторінка та інструмент для редагування" title="Власний творчий проєкт"></div>
+          <h2 class="feature-card__title">Твоя ідея — твій сайт</h2>
+          <p class="feature-card__text">Не просто повторюй приклади, а створюй сторінки на близькі тобі теми.</p>
+        </article>
+      </div>
+    </section>

@@ -63,3 +63,65 @@
         </article>
       </div>
     </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="section-heading">
+        <p class="section-heading__eyebrow">Напиши нам</p>
+        <h2 class="section-heading__title" id="contact-title">Почнімо з розмови</h2>
+      </div>
+      <div class="contact-layout">
+        <form class="contact-form">
+          <div class="contact-form__field">
+            <label class="contact-form__label" for="student-name">Твоє ім’я</label>
+            <input class="contact-form__input" type="text" id="student-name" name="name" placeholder="Як до тебе звертатися?" autocomplete="name" required>
+          </div>
+          <div class="contact-form__field">
+            <label class="contact-form__label" for="student-email">Електронна пошта</label>
+            <input class="contact-form__input" type="email" id="student-email" name="email" placeholder="name@example.com" autocomplete="email" required>
+          </div>
+          <div class="contact-form__field">
+            <label class="contact-form__label" for="student-message">Повідомлення</label>
+            <textarea class="contact-form__input contact-form__input--message" id="student-message" name="message" placeholder="Розкажи, що хочеш створити..." required></textarea>
+          </div>
+          <button class="contact-form__button" type="submit">Надіслати <span aria-hidden="true">↗️</span></button>
+        </form>
+        <div class="contact-info">
+          <img class="contact-info__map" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 380'%3E%3Crect width='720' height='380' fill='%23f0edf8'/%3E%3Cpath d='M-20 280 110 190 190 225 290 100 380 155 510 45 740 120M35 0 180 380M280-20 250 400M470-20 520 400M0 80l720 200' fill='none' stroke='%23d7ccef' stroke-width='18'/%3E%3Cpath d='M0 330 155 240M585 0 660 380M360 0l-90 380' fill='none' stroke='%23fff' stroke-width='8'/%3E%3Ccircle cx='380' cy='180' r='28' fill='%237b4dff'/%3E%3Ccircle cx='380' cy='180' r='10' fill='%23fff'/%3E%3C/svg%3E" alt="Схематична карта з позначенням майстерні Піксель" title="Розташування майстерні">
+          <div class="contact-info__details">
+            <div class="contact-info__item">
+              <span class="contact-info__icon" aria-hidden="true">⌖</span>
+              <p class="contact-info__text"><span class="contact-info__label">Завітай до нас</span>Київ, вул. Університетська, 12</p>
+            </div>
+            <div class="contact-info__item">
+              <span class="contact-info__icon" aria-hidden="true">✉️</span>
+              <p class="contact-info__text"><span class="contact-info__label">Напиши нам</span><a class="contact-info__link" href="mailto:hello@pixel.study" title="Написати до майстерні">hello@pixel.study</a></p>
+            </div>
+            <div class="contact-info__item">
+              <span class="contact-info__icon" aria-hidden="true">☎️</span>
+              <p class="contact-info__text"><span class="contact-info__label">Зателефонуй</span><a class="contact-info__link" href="tel:+380442560011" title="Зателефонувати до майстерні">+38 (044) 256-00-11</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand brand--footer" href="#home" title="Повернутися на початок сторінки">
+      <span class="brand__symbol" aria-hidden="true">п.</span>
+      <span class="brand__name">піксель<span class="brand__dot">.</span></span>
+    </a>
+    <p class="site-footer__copyright">© 2026 Піксель — майстерня вебдизайну</p>
+    <nav class="footer-nav" aria-label="Навігація внизу сторінки">
+      <ul class="footer-nav__list">
+        <li class="footer-nav__item"><a class="footer-nav__link" href="#home" title="На початок сторінки">Головна</a></li>
+        <li class="footer-nav__item"><a class="footer-nav__link" href="#features" title="Наші переваги">Переваги</a></li>
+        <li class="footer-nav__item"><a class="footer-nav__link" href="#programs" title="Програми навчання">Програми</a></li>
+        <li class="footer-nav__item"><a class="footer-nav__link" href="#contact" title="Контактна форма">Контакти</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>
